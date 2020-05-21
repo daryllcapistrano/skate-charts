@@ -1,4 +1,4 @@
-export const CountryData = [
+export const countryData = [
 	{ country: 'Russia', area: 12 },
 	{ country: 'Canada', area: 7 },
 	{ country: 'USA', area: 7 },

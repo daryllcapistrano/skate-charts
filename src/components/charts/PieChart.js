@@ -1,7 +1,7 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import { Chart, PieSeries, Legend, Title } from '@devexpress/dx-react-chart-material-ui';
-import { CountryData as data } from '../../data/data-visualization';
+import { countryData as data } from '../../data/data-visualization';
 
 export default class PieChart extends React.PureComponent {
 	constructor(props) {
