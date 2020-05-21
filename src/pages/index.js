@@ -3,14 +3,16 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-// import PieChart from '../components/charts/PieChart';
-import StackedBarChart from '../components/charts/StackedBarChart';
+
+import MaleStreetRankings from '../components/charts/MaleStreetRankings';
+import FemaleStreetRankings from '../components/charts/FemaleStreetRankings';
 
 const IndexPage = () => (
 	<Layout>
 		<SEO title="Home" />
-		{/* <PieChart /> */}
-		<StackedBarChart />
+		<MaleStreetRankings />
+		<br />
+		<FemaleStreetRankings />
 	</Layout>
 );
 
