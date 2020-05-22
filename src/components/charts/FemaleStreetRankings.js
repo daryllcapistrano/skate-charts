@@ -1,6 +1,6 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
-import { Chart, ArgumentAxis, ValueAxis, BarSeries, Title } from '@devexpress/dx-react-chart-material-ui';
+import { Chart, ArgumentAxis, ValueAxis, BarSeries, Title, Legend } from '@devexpress/dx-react-chart-material-ui';
 
 import { scaleBand } from '@devexpress/dx-chart-core';
 import { ArgumentScale } from '@devexpress/dx-react-chart';
@@ -26,8 +26,8 @@ export default class StackedBarChart extends React.PureComponent {
 					<ArgumentAxis />
 					<ValueAxis />
 
-					<BarSeries valueField="wsrPoints" argumentField="name" name="wsrPoints" />
-
+					<BarSeries name="wsrPoints" valueField="wsrPoints" argumentField="name" />
+					<Legend />
 					<Title text="Top 10 Street Rankings (female)" />
 				</Chart>
 			</Paper>
