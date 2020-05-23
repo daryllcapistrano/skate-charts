@@ -21,10 +21,11 @@ export default class StackedBarChart extends React.PureComponent {
 
 		return (
 			<Paper>
-				<Chart data={chartData}>
-					<ArgumentScale factory={scaleBand} />
-					<ArgumentAxis />
-					<ValueAxis />
+				{/* reversed to show #1 on top */}
+				<Chart data={chartData.reverse()} rotated="true">
+					<ArgumentScale factory={scaleBand} inverted={true} />
+					<ArgumentAxis inverted={true} />
+					<ValueAxis inverted={true} />
 
 					<BarSeries name="wsrPoints" valueField="wsrPoints" argumentField="name" barWidth="1" />
 					<Legend />

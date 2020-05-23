@@ -21,7 +21,8 @@ export default class StackedBarChart extends React.PureComponent {
 
 		return (
 			<Paper>
-				<Chart data={chartData}>
+				{/* reversed to show #1 on top */}
+				<Chart data={chartData.reverse()} rotated="true">
 					<ArgumentScale factory={scaleBand} />
 					<ArgumentAxis />
 					<ValueAxis />
